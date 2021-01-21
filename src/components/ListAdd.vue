@@ -11,7 +11,6 @@
       <button type="submit" class="add-button" v-if="isEditing || titleExist">
         Add
       </button>
-      <p>{{isEditing}}</p>
   </form>
 </template>
 
