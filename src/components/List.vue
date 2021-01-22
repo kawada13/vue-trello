@@ -4,10 +4,13 @@
       <p class="list-title">{{ title }}</p>
       <div class="deletelist" @click="removeList">×</div>
     </div>
+    <card-add :listIndex="listIndex" />
   </div>
 </template>
 
 <script>
+import CardAdd from './CardAdd'
+
 export default {
   props: {
     title: {
@@ -26,5 +29,8 @@ export default {
       }
     },
   },
+  components: {
+    CardAdd
+  }
 }
 </script>
